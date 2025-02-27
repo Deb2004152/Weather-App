@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>Weather App</h1>
+        <div class="search-container">
+            <input type="text" id="cityInput" placeholder="Enter city name">
+            <button onclick="fetchWeather()">Search</button>
+        </div>
+        <div id="weatherInfo" class="weather-info">
+            <h2 id="cityName"></h2>
+            <div class="weather-details">
+                <div class="detail">
+                    <span class="label">Temparature</span>
+                    <span id="temperature" class="value"></span>
+                </div>
+                <div class="detail">
+                    <span class="label">Wind</span>
+                    <span id="wind" class="value"></span>
+                </div>
+                <div class="detail">
+                    <span class="label">Pressure</span>
+                    <span id="pressure" class="value"></span>
+                </div>
+                <div class="detail">
+                    <span class="label">Humidity</span>
+                    <span id="humidity" class="value"></span>
+                </div>
+                <div class="detail">
+                    <span class="label">Sunrise</span>
+                    <span id="sunrise" class="value"></span>
+                </div>
+                <div class="detail">
+                    <span class="label">Sunset</span>
+                    <span id="sunset" class="value"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
